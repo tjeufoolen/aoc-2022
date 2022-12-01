@@ -2,9 +2,9 @@
 
 https://adventofcode.com/2022
 
-## Days
+## Solutions
 
-1. Soon...
+1. [Calorie Counting](src/main/java/dev/foolen/aoc2022/solutions/Day01.java)
 
 ## Author
 
