@@ -5,6 +5,8 @@ https://adventofcode.com/2022
 ## Solutions
 
 1. [Calorie Counting](src/main/java/dev/foolen/aoc2022/solutions/Day01.java)
+2. [Rock Paper Scissors](src/main/java/dev/foolen/aoc2022/solutions/Day02.java)
+3. [Rucksack Reorganization](src/main/java/dev/foolen/aoc2022/solutions/Day02.java)
 
 ## Author
 
