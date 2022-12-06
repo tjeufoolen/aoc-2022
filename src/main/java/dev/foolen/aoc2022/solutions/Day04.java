@@ -23,20 +23,20 @@ public class Day04 {
     }
 
     private static void solvePartOne() {
-        long pairs = getAssignmentPairsBasedOnPredicate((x -> x.fs <= x.ss && x.fe >= x.se || x.fs >= x.ss && x.fe <= x.se));
+        long pairs = getNumberOfAssignmentPairsBasedOnPredicate((x -> x.fs <= x.ss && x.fe >= x.se || x.fs >= x.ss && x.fe <= x.se));
         System.out.printf("[PartOne] result: %d%n", pairs);
         // - 498
     }
 
     private static void solvePartTwo() {
-        long pairs = getAssignmentPairsBasedOnPredicate((x -> x.fs >= x.ss && x.fs <= x.se || x.fs <= x.ss && x.fe >= x.ss));
+        long pairs = getNumberOfAssignmentPairsBasedOnPredicate((x -> x.fs >= x.ss && x.fs <= x.se || x.fs <= x.ss && x.fe >= x.ss));
         System.out.printf("[PartTwo] result: %d%n", pairs);
         // - 859
     }
 
     private record AssignmentPair(int fs, int fe, int ss, int se) {}
 
-    private static long getAssignmentPairsBasedOnPredicate(Predicate<AssignmentPair> predicate) {
+    private static long getNumberOfAssignmentPairsBasedOnPredicate(Predicate<AssignmentPair> predicate) {
         Pattern pattern = Pattern.compile("(\\d{1,3})-(\\d{1,3}),(\\d{1,3})-(\\d{1,3})");
         return input.stream()
             .map(line -> {
