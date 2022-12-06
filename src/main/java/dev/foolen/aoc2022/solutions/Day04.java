@@ -23,13 +23,13 @@ public class Day04 {
     }
 
     private static void solvePartOne() {
-        long pairs = getNumberOfAssignmentPairsBasedOnPredicate((x -> x.fs <= x.ss && x.fe >= x.se || x.fs >= x.ss && x.fe <= x.se));
+        long pairs = getNumberOfAssignmentPairsBasedOnPredicate(x -> x.fs <= x.ss && x.fe >= x.se || x.fs >= x.ss && x.fe <= x.se);
         System.out.printf("[PartOne] result: %d%n", pairs);
         // - 498
     }
 
     private static void solvePartTwo() {
-        long pairs = getNumberOfAssignmentPairsBasedOnPredicate((x -> x.fs >= x.ss && x.fs <= x.se || x.fs <= x.ss && x.fe >= x.ss));
+        long pairs = getNumberOfAssignmentPairsBasedOnPredicate(x -> x.fs >= x.ss && x.fs <= x.se || x.fs <= x.ss && x.fe >= x.ss);
         System.out.printf("[PartTwo] result: %d%n", pairs);
         // - 859
     }
