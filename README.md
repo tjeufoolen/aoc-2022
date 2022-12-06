@@ -9,6 +9,7 @@ https://adventofcode.com/2022
 3. [Rucksack Reorganization](src/main/java/dev/foolen/aoc2022/solutions/Day03.java)
 4. [Camp Cleanup](src/main/java/dev/foolen/aoc2022/solutions/Day04.java)
 5. [Supply Stacks](src/main/java/dev/foolen/aoc2022/solutions/Day05.java)
+6. [Tuning Trouble](src/main/java/dev/foolen/aoc2022/solutions/Day06.java)
 
 ## Author
 
