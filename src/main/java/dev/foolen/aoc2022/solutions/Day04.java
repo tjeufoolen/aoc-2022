@@ -37,9 +37,10 @@ public class Day04 {
     private record AssignmentPair(int fs, int fe, int ss, int se) {}
 
     private static long getAssignmentPairsBasedOnPredicate(Predicate<AssignmentPair> predicate) {
+        Pattern pattern = Pattern.compile("(\\d{1,3})-(\\d{1,3}),(\\d{1,3})-(\\d{1,3})");
         return input.stream()
             .map(line -> {
-                Matcher m = Pattern.compile("(\\d{1,3})-(\\d{1,3}),(\\d{1,3})-(\\d{1,3})").matcher(line);
+                Matcher m = pattern.matcher(line);
                 if (m.find()) {
                     int fs = Integer.parseInt(m.group(1)), fe = Integer.parseInt(m.group(2));
                     int ss = Integer.parseInt(m.group(3)), se = Integer.parseInt(m.group(4));
